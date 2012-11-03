@@ -62,3 +62,24 @@ console.log("Jason makes elixer " + a + " memory for Kitty to remember Channing.
  }
 console.log("Jason puts " + jasonHelp(50*40) + " percent into making Kitty happy again.")
 
+
+// returned boolean
+
+
+//
+Math
+
+
+var x =4-2
+console.log(x + " Kitty mourns the death of Channing for " + x + " months .");
+
+// for loop
+
+for (var jasonSendsRoses = 15; jasonSendsRoses >0; jasonSendsRoses --){
+      console.log(jasonSendsRoses + "Jason sends roses to help Kitty Mourn and feel better.");
+      
+};
+console.log("The last rose is a fake and will never die" + " He tells her that when the last rose dies, his love for her dies.");
+
+
+

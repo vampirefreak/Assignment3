@@ -82,4 +82,34 @@ for (var jasonSendsRoses = 15; jasonSendsRoses >0; jasonSendsRoses --){
 console.log("The last rose is a fake and will never die" + " He tells her that when the last rose dies, his love for her dies.");
 
 
+// json data
+
+var json = {
+    "lovers": [
+        {
+            "date": "103112",
+            "name": "Jason",
+            "place": "Club Immortal",
+            "what": "proposal"
+        },
+    
+{
+
+        "date": "110112",
+        "name" : "Kitty",
+        "place": "Club Immortal dance floor",
+        "what" : "accepting proposal"
+    }
+    
+   ]
+};
+
+var proposalData = function (json){
+    for (var i = 0; i < json.lovers.length; i++){
+        var people =json.lovers[i];
+        console.log("Date : " + people.date + " Lovers name " + people.name + "Place of date " + people.place + "what Jason and Kitty are doing, " + people.what);
+        
+    }
+};
+proposalData(json);
 

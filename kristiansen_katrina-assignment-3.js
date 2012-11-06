@@ -113,3 +113,23 @@ var proposalData = function (json){
 };
 proposalData(json);
 
+// property boolean
+
+var dress= new Boolean("Kitty models dress A. ");
+console.log ("Kitty is planning her wedding " + dress);
+
+// method accessor and mutator
+
+var wedding = {
+    "name": "kittyWed",
+    "dress": 3000,
+    "cake" : 4000,
+    "hotel": 5000,
+    "Dj"   : 400,
+    "venue": 6000,
+    "budget": function(){
+       var totalBudget = this.cake + this.Dj + this.dress + this.hotel + this.venue;
+       return totalBudget;
+    }
+};
+console.log("the total budget so far is" + wedding.budget());

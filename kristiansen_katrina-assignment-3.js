@@ -132,4 +132,70 @@ var wedding = {
        return totalBudget;
     }
 };
-console.log("the total budget so far is" + wedding.budget());
+console.log("the total budget so far is " + wedding.budget());
+
+// argument array
+
+function calcBudget()
+{
+   var trueBudget = 150000
+   for(var i=0; i<arguments.length; i++)
+      trueBudget = trueBudget + arguments[i]
+   var money= trueBudget/arguments.length
+   return money
+}
+console.log("Money its gonna cost for her wedding is = " + calcBudget(3000, 4000, 5000, 400 , 6000))
+
+// property array
+
+var i;
+var myCakes = new Array();
+myCakes[0] = "Chocolate cake, with white fondant, with hazelnut cream filling ";
+myCakes[1] = "6 tiered red velvet, cream cheese filling, White fondant with chocolate branches and cherry blossom flowers ";
+myCakes[2] = "3 tiered vanilla, with raspberry filling, pink, red, and purple fondant, red, black, purple roses going up the side of the cake. ";
+
+for (i=2;i<myCakes.length;i++)
+{
+console.log(myCakes[i] + "cake testing day. ");
+
+};
+
+// property string
+var animalName="Maximous the Huskymous";
+var animalName2= "Skeeter the cat"
+var jasonSays=" Maximous the Huskymous will stand or sit next to me. ";
+var kittySays=" Skeeter the cat will stand next to me. ";
+var maxAndSkeeter= "Bark Bark Bark!!! Meow meow, meow!!!" 
+
+console.log(animalName + " Best Dog")
+console.log(animalName2 + "Best kitten")
+console.log(jasonSays + " Being the best dog.")
+console.log(kittySays+ " Being the best kitten. ")
+console.log(maxAndSkeeter+ " these are the animal's words..")
+
+// return number
+
+function church(number)
+{
+     var number1 = number*number;
+     
+     return number1;
+}
+
+var x = 4;
+// Here we invoke the function and capture the result
+var des = church(x);
+var res = des/2;
+console.log(" The church - "+res );
+
+//method function
+
+// property function
+
+// for loop
+
+for (var getDone = 30; getDone >0; getDone--) {
+    console.log(getDone + " Getting the wedding done. ");
+    
+};
+console.log(" The Wedding is over.");
